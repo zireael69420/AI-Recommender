@@ -28,11 +28,11 @@ import os
 
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'fallback_dev_secret')
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
-ALLOWED_HOSTS = ['ai-recommender-3wq5.onrender.com/', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['ai-recommender-3wq5.onrender.com', 'localhost', '127.0.0.1']
 
 # Add your environment variables for MongoDB and OpenAI
-OPENAI_KEY = os.getenv("dab82bcf11b83362167ef1634b859e6a")
-MONGO_URI = os.getenv("mongodb+srv://vicente_db_user:6x68yFjrBMdvHGlG@cluster0.aurkgcd.mongodb.net/?appName=Cluster0")
+OPENAI_KEY = os.getenv("OPENAI_KEY")
+MONGO_URI = os.getenv("MONGO_URI")
 
 
 # Application definition
