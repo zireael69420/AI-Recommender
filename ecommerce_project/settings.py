@@ -23,13 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-9h0b10k4@t!s0wc_0%5gz(_x7+-x&@206ww(jt)8yj9m2fp8%x'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 import os
 
 SECRET_KEY = os.getenv('ft)h%+8b#^+%jajrr(kv_l&2@u78!wkp8k(r8h5ylioyf4f#u5', "fallback_dev_secret")
 DEBUG = False
-ALLOWED_HOSTS = ['ai-recommender-ecommerce.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://ai-recommender-3wq5.onrender.com/', 'localhost', '127.0.0.1']
 
 # Add your environment variables for MongoDB and OpenAI
 OPENAI_KEY = os.getenv("dab82bcf11b83362167ef1634b859e6a")
